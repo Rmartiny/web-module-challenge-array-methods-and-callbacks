@@ -7,7 +7,7 @@ Practice accessing data by console.log-ing the following pieces of data note.
 
 💡 HINT: You may want to filter the data first 😉*/
 const finals2014=fifaData.filter((item)=>{
-    return item.year === 2014 && item.Stage === 'Final'
+    return item.Year === 2014 && item.Stage === 'Final';
 });
 console.log (finals2014);
 //(a) Home Team name for 2014 world cup final
