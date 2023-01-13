@@ -11,9 +11,9 @@ const finals2014=fifaData.filter((item)=>{
 });
 console.log (finals2014);
 //(a) Home Team name for 2014 world cup final
-console.log('task 1a', finals2014('Home Team Name'))
+console.log('task 1a', finals2014[0]('Home Team Name'))
 //(b) Away Team name for 2014 world cup final
-console.log('task 1b', finals2014("Away Team Name"))
+console.log('task 1b', finals2014[0]("Away Team Name"))
 //(c) Home Team goals for 2014 world cup final
 
 //(d) Away Team goals for 2014 world cup final
