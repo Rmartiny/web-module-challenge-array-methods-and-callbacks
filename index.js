@@ -11,6 +11,7 @@ Practice accessing data by console.log-ing the following pieces of data note.
 const hometeam2014 = fifaData.filter((team)=> {
     return team = "hometeamname"
 });
+console.log (hometeam2014)
 
 //(b) Away Team name for 2014 world cup final
 
