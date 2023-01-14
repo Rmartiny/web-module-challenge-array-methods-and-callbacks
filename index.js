@@ -81,7 +81,7 @@ Use the higher-order function getWinnersByYear to do the following:
 function getWinnersByYear(data,getYearsCB,getWinnersCB) {
     const winners = getWinnersCB(data,getFinals)
     const years = getYearsCB(data, getFinals)
-    return winners.map ((item,index) =>`In ${item}, ${item} won the world cup!`);
+    return winners.map ((item,index) =>`In ${index}, ${item} won the world cup!`);
  }
     
 
