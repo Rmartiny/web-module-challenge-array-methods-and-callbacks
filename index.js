@@ -50,7 +50,7 @@ function getYears(data, getFinalsCB) {
     return getFinalsCB(data).map( (item)=> item.Years )
 }
 
-console.log (getYears(fifaData ,getFinals));
+console.log (getYears(fifaData ,getFinalsCB));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use the higher-order function getWinners to do the following:  
