@@ -33,10 +33,10 @@ function getFinals(data) {
     const allfinals = data.filter((teams)=>{
         return teams.Stage ==='Final'
     });
-    return allfinals
+    return allfinals;
  };
 
- console.log getFinals(fifaData);
+ console.log (getFinals(fifaData));
 
 
 
