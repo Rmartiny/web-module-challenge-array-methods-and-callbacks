@@ -47,10 +47,10 @@ Use the higher-order function called getYears to do the following:
 3. Return an array called years containing all of the years in the getFinals data set*/
 
 function getYears(data, getFinalsCB) {
-    return getFinalsCB(data).map( (item)=> item.Years )
+    return getFinalsCB(data).Map( (item)=> item.Years )
 }
 
-console.log (getYears(fifaData ,getFinalsCB));
+console.log (getYears(fifaData ,getFinals));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use the higher-order function getWinners to do the following:  
