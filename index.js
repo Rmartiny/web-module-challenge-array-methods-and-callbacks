@@ -61,7 +61,7 @@ Use the higher-order function getWinners to do the following:
 4. Returns the names of all winning countries in an array called `winners` */ 
 
 function getWinners(data,getFinalsCB) {
-    return getFinalsCB(data).map (item => item['Home Team Goals'] >= item['Away Team Goals'] ? item['Home Team Name'] : item['Away team Name']);
+    return getFinalsCB(data).map (item => item['Home Team Goals'] > item['Away Team Goals'] ? item['Home Team Name'] : item['Away team Name']);
 
 }
  console.log (getWinners(fifaData,getFinals))
@@ -78,8 +78,8 @@ Use the higher-order function getWinnersByYear to do the following:
 💡 HINT: the strings returned need to exactly match the string in step 4.
  */
 
-function getWinnersByYear(/* code here */) {
-    /* code here */
+function getWinnersByYear(data, getFinalsCB,getYearsCB,getWinnersCB) {
+    
 }
 
 
@@ -98,8 +98,8 @@ Use the higher order function `getAverageGoals` to do the following:
  
 */
 
-function getAverageGoals(/* code here */) {
-    /* code here */
+function getAverageGoals(data,getFinalsCB) {
+    return getFinalsCB(data).reduce (total['Home Team Goals'])
  }
 
 
