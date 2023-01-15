@@ -103,14 +103,14 @@ Use the higher order function `getAverageGoals` to do the following:
  
 */
 
-function getAverageGoals(getFinalsCB) {
+function getAverageGoals(CB) {
 
-    let homeReduce= getFinalsCB.reduce ((acc,team) =>{ return acc + team['Home Team Goals'] / getFinalsCB.length},0);
-     let awayReduce = getFinalsCB.reduce((acc,team)=> { return acc + team[ 'Away Team Goals']/getFinalsCB.length},0);
+    let homeReduce= CB.reduce ((acc,team) =>{ return acc + team['Home Team Goals'] / CB.length},0);
+     let awayReduce = CB.reduce ((acc,team)=> { return acc + team[ 'Away Team Goals']/CB.length},0);
      return( homeReduce + awayReduce).toFixed(2)
 
     } 
- console.log (getAverageGoals(getFinals))
+ console.log (getAverageGoals(getFinals(fifaData)))
 
 
 
