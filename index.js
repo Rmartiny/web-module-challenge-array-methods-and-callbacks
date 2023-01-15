@@ -110,7 +110,7 @@ function getAverageGoals(getFinalsCB) {
      return( homeReduce + awayReduce).toFixed(2)
 
     } 
- console.log (getAverageGoals(getFinals,fifaData))
+ console.log (getAverageGoals(getFinals))
 
 
 
